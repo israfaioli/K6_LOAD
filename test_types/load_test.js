@@ -1,6 +1,6 @@
 // CARACTERISTICAS
-    //metodologia mais comum
-    // avaliacao de desepnho da aplicacao com usuarios simultaneos
+    // metodologia mais comum
+    // avaliacao de desempenho da aplicacao com usuarios simultaneos
     // quantidade de trafego
     // condicoes normais e de pico 
     // garantir o funcionamento
