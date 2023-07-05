@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre-build:
+    commands:
+      - echo Pull loadimpact/k6 image..
+      - docker pull loadimpact/k6
+  build:
+    commands:
+      - echo Run performance test
+      - docker run -i loadimpact/k6 run - <tests/cloud_aws_test.js
+
+  post-build:
+    commands:
+      - echo Performance test complete
