@@ -10,4 +10,10 @@ jobs:
       - name: Run k6 load test
         uses: grafana/k6-action@v0.3.0
         with:
-          filename: tests/load_scenario_test.js    
+          filename: tests/report_scenario_test.js    
+      - run: ls & mkdir report & mv index.html report     
+      - name: Upload artifact         
+        uses: actions/upload-artifact@v3
+        with:
+          name: relatorio de testes perfomance k6
+          path: report     
