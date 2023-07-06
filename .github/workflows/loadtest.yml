@@ -1,5 +1,7 @@
 name: k6 load test
 on: [push]
+permissions: 
+  contents: write
 jobs:
   build:
     name: Run k6 test
@@ -17,3 +19,9 @@ jobs:
         with:
           name: relatorio de testes perfomance k6
           path: report     
+      - name: Publish report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: report               
