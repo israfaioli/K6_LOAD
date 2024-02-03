@@ -8,6 +8,12 @@ export const options = {
     duration: '3s',
     thresholds: {
         checks: ['rate > 0.99']
+    },
+    ext: {
+        loadimpact: {
+            projectID: '3680724',
+            name: 'Exemplo de execução',
+        }
     }
 }
 

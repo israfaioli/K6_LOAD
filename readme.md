@@ -21,5 +21,21 @@ Neste exemplo utilizamos como base as seguintes urls oficiais do k6:
 - https://k6.io/docs/
 - https://test.k6.io/
 
+### Rodando o projeto ###
+
+* Acessa a pasta do projeto
+* Acesse o diretório tests:
+* Executar o comando para gerar dados local
+
+```
+k6 run .\<sua_classe_teste>.js
+```
+
+* Executar o comando para gerar dados na nuvem via grafana
+
+```
+k6 cloud .\<sua_classe_teste>.js
+```
+
 Caro recrutador caso sinta interesse em ver outros projetos de meu portifólio acessar a url abaixo: 
 - https://github.com/israfaioli
