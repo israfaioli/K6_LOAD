@@ -9,7 +9,13 @@ import sleep from 'k6';
 
     export const options= {
         vus: 100,
-        duration: '2s'
+        duration: '2s',
+        ext: {
+            loadimpact: {
+                projectID: '3680724',
+                name: 'Exemplo de execução',
+            }
+        }
     }
 
 // 3. execução ou vu code

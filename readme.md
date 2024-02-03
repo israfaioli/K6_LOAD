@@ -25,16 +25,28 @@ Neste exemplo utilizamos como base as seguintes urls oficiais do k6:
 
 * Acessa a pasta do projeto
 * Acesse o diretório tests:
-* Executar o comando para gerar dados local
+* Executar o comando para executar um teste especifico
 
 ```
 k6 run .\<sua_classe_teste>.js
 ```
 
-* Executar o comando para gerar dados na nuvem via grafana
+* Executar todos os testes local
+
+```
+Get-ChildItem -Path ".\tests\" -Filter *.js | ForEach-Object { k6 run $_.FullName }
+```
+
+* Rodar teste específico salvando dados na nuvem via grafana
 
 ```
 k6 cloud .\<sua_classe_teste>.js
+```
+
+* Rodar todos os testes salvando dados na nuvem via grafana
+
+```
+Get-ChildItem -Path ".\tests\" -Filter *.js | ForEach-Object { k6 cloud $_.FullName }
 ```
 
 Caro recrutador caso sinta interesse em ver outros projetos de meu portifólio acessar a url abaixo: 

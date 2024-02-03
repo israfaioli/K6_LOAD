@@ -30,6 +30,12 @@ export const options = {
     ],
     thresholds: {
         http_req_failed: ['rate < 0.01']
+    },
+    ext: {
+        loadimpact: {
+            projectID: '3680724',
+            name: 'Exemplo de execução',
+        }
     }
 }
 

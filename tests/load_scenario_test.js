@@ -31,6 +31,12 @@ export const options = {
     thresholds: {
         http_req_duration: [{threshold: 'p(90) < 200', abortOnFail: true}],
         checks: ['rate > 0.95']
+    },
+    ext: {
+        loadimpact: {
+            projectID: '3680724',
+            name: 'Exemplo de execução',
+        }
     }
 }
 
