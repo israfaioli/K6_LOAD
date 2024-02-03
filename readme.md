@@ -1,3 +1,5 @@
+![poster](https://toxsl.com/blog/image/77/post-image_file-QUALITY_ASSURANCE.png)
+
 Projeto para demonstrar conhecimento sobre testes de carga e performance utilizando a ferramenta JS k6.
 
 
@@ -21,7 +23,7 @@ Neste exemplo utilizamos como base as seguintes urls oficiais do k6:
 - https://k6.io/docs/
 - https://test.k6.io/
 
-### Rodando o projeto ###
+## 🤖 Como executar
 
 * Acessa a pasta do projeto
 * Acesse o diretório tests:
@@ -49,5 +51,6 @@ k6 cloud .\<sua_classe_teste>.js
 Get-ChildItem -Path ".\tests\" -Filter *.js | ForEach-Object { k6 cloud $_.FullName }
 ```
 
+<hr>
 Caro recrutador caso sinta interesse em ver outros projetos de meu portifólio acessar a url abaixo: 
 - https://github.com/israfaioli
